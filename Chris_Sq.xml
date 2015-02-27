@@ -76,8 +76,8 @@
                 <statement name="DO">
                   <block type="oled_setcursor" id="437" inline="true">
                     <value name="STARTX">
-                      <block type="variables_get" id="488">
-                        <field name="VAR">counter</field>
+                      <block type="math_number" id="504">
+                        <field name="NUM">0</field>
                       </block>
                     </value>
                     <value name="STARTY">
