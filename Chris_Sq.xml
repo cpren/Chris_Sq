@@ -186,7 +186,7 @@
                                         <field name="VAR">counter</field>
                                         <value name="VALUE">
                                           <block type="math_arithmetic" id="45" inline="true">
-                                            <field name="OP">ADD</field>
+                                            <field name="OP">MINUS</field>
                                             <value name="A">
                                               <block type="variables_get" id="46">
                                                 <field name="VAR">counter</field>
@@ -204,7 +204,7 @@
                                             <field name="VAR">x</field>
                                             <value name="VALUE">
                                               <block type="math_arithmetic" id="49" inline="true">
-                                                <field name="OP">ADD</field>
+                                                <field name="OP">MINUS</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="50">
                                                     <field name="VAR">x</field>
