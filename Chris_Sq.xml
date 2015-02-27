@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="177" x="-402" y="-3">
+  <block type="oled_cleardisplay" id="177" x="-365" y="23">
     <next>
       <block type="variables_set" id="308" inline="true">
         <field name="VAR">counter</field>
@@ -34,7 +34,7 @@
                       <block type="robot_delay" id="393" inline="true">
                         <value name="DELAY">
                           <block type="math_number" id="400">
-                            <field name="NUM">100</field>
+                            <field name="NUM">60</field>
                           </block>
                         </value>
                         <next>
@@ -76,8 +76,18 @@
                 <statement name="DO">
                   <block type="oled_setcursor" id="437" inline="true">
                     <value name="STARTX">
-                      <block type="variables_get" id="438">
-                        <field name="VAR">counter</field>
+                      <block type="math_arithmetic" id="484" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="variables_get" id="488">
+                            <field name="VAR">counter</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="495">
+                            <field name="NUM">-1</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                     <value name="STARTY">
@@ -92,7 +102,7 @@
                           <block type="robot_delay" id="441" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="442">
-                                <field name="NUM">100</field>
+                                <field name="NUM">60</field>
                               </block>
                             </value>
                             <next>
