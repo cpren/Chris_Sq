@@ -53,6 +53,14 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="oled_drawtext" id="272">
+            <field name="TEXT">Success</field>
+            <next>
+              <block type="movement_stop" id="263"></block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
