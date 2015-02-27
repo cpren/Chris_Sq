@@ -70,8 +70,8 @@
               <block type="variables_set" id="508" inline="true">
                 <field name="VAR">x</field>
                 <value name="VALUE">
-                  <block type="math_number" id="515">
-                    <field name="NUM">0</field>
+                  <block type="variables_get" id="548">
+                    <field name="VAR">counter</field>
                   </block>
                 </value>
                 <next>
