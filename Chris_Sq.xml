@@ -153,7 +153,87 @@
                       </block>
                     </statement>
                     <next>
-                      <block type="movement_stop" id="263"></block>
+                      <block type="controls_repeat" id="551" inline="true">
+                        <value name="TIMES">
+                          <block type="math_number" id="552">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="oled_setcursor" id="553" inline="true">
+                            <value name="STARTX">
+                              <block type="variables_get" id="554">
+                                <field name="VAR">x</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="variables_get" id="555">
+                                <field name="VAR">counter</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="556">
+                                <field name="TEXT">Success</field>
+                                <next>
+                                  <block type="robot_delay" id="557" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="558">
+                                        <field name="NUM">60</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="559" inline="true">
+                                        <field name="VAR">counter</field>
+                                        <value name="VALUE">
+                                          <block type="math_arithmetic" id="560" inline="true">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="561">
+                                                <field name="VAR">counter</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="562">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="563" inline="true">
+                                            <field name="VAR">x</field>
+                                            <value name="VALUE">
+                                              <block type="math_arithmetic" id="564" inline="true">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="565">
+                                                    <field name="VAR">x</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="566">
+                                                    <field name="NUM">10</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="oled_cleardisplay" id="567"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="movement_stop" id="263"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
