@@ -84,23 +84,32 @@
                       <block type="oled_drawtext" id="272">
                         <field name="TEXT">Success</field>
                         <next>
-                          <block type="variables_set" id="371" inline="true">
-                            <field name="VAR">counter</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="344" inline="true">
-                                <field name="OP">ADD</field>
-                                <value name="A">
-                                  <block type="variables_get" id="375">
-                                    <field name="VAR">counter</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="382">
-                                    <field name="NUM">1</field>
+                          <block type="robot_delay" id="393" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="400">
+                                <field name="NUM">20</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="371" inline="true">
+                                <field name="VAR">counter</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="344" inline="true">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="375">
+                                        <field name="VAR">counter</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="382">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
-                            </value>
+                            </next>
                           </block>
                         </next>
                       </block>
